@@ -1,0 +1,113 @@
+@import '../scss/mixins.scss';
+
+.header {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: .8rem;
+  margin: 0;
+}
+
+.header-nav {
+  white-space: nowrap;
+  max-width: 100vw;
+  overflow: scroll;
+  padding: 0 3em 0 0;
+}
+
+.header-nav:before,
+.header-nav:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 1rem;
+  width: .3em;
+  height: .5em;
+}
+
+.header-nav:before {
+  top: calc(1.5rem + .5em);
+  transform: skew(-45deg);
+}
+
+.header-nav:after {
+  top: calc(1.5rem);
+  transform: skew(45deg);
+}
+
+.header-menu {
+  display: inline-block;
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+}
+
+.header-menu:after {
+  content: '';
+  display: block;
+  height: 5px;
+}
+
+.header-primary {
+  background: #EDEDED;
+}
+
+.header-secondary {
+  background: #F3F3F3;
+}
+
+.header-item {
+  display: inline-block;
+  color: #333;
+  padding: 5px .5rem 0;
+  transition: none!important;
+  cursor: pointer;
+}
+
+.header-item:focus,
+.header-item:hover {
+  color: #fff;
+  outline: none;
+}
+
+.header-link {
+  color: #333;
+  text-decoration: none;
+}
+
+$iconBase: '.icon';
+#{$iconBase} {
+  a {
+    width: 2em;
+    color: transparent;
+    display: block;
+    position: relative;
+    top: -2px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+
+#{$iconBase}--twitter a {
+  @include icon-twitter(#333);
+}
+
+#{$iconBase}--github a {
+  @include icon-github(#333);
+}
+
+#{$iconBase}--codepen a {
+  @include icon-codepen(#333);
+}
+
+#{$iconBase}--twitter:hover a {
+  @include icon-twitter(#fff);
+}
+
+#{$iconBase}--github:hover a {
+  @include icon-github(#fff);
+}
+
+#{$iconBase}--codepen:hover a {
+  @include icon-codepen(#fff);
+}

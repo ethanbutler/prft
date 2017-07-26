@@ -1,0 +1,26 @@
+.feed {
+  max-width: 45em;
+  padding: 0 1rem;
+  margin: 0 0 3em;
+
+  h2,
+  h3,
+  strong {
+    color: #555;
+  }
+
+  h2,
+  h3 {
+    margin: 0;
+    line-height: 1;
+  }
+
+  p {
+    margin: 0 0 1em;
+  }
+
+  p + h2,
+  p + h3 {
+    margin-top: 1em;
+  }
+}

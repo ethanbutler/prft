@@ -1,0 +1,62 @@
+.oss {
+
+}
+
+.oss-quote {
+  display: block;
+  margin: .5em 0 1em;
+  line-height: 1;
+}
+
+.tools {
+  list-style: none;
+  padding: 0;
+  display: inline;
+}
+
+.tools-single {
+  color: #777;
+  display: inline;
+  margin: 0 0 0 .5em;
+  &:after {
+    content: ',';
+  }
+  &:last-of-type:after {
+    display: none;
+  }
+}
+
+.filter {
+  margin: 0 0 2em;
+}
+
+.filter-label {
+  display: inline-block;
+  font-weight: 900;
+  color: #fff;
+  background: #333;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  padding: 0 .5em;
+  vertical-align: middle;
+  height: 30px;
+}
+
+.filter-list {
+  display: inline;
+  padding: 0;
+}
+
+.filter-item {
+  display: inline-block;
+  background: #ddd;
+  margin: 0 0 0 5px;
+  padding: 0 .5em;
+  vertical-align: middle;
+  height: 30px;
+  user-select: none;
+}
+
+.filter-item--active {
+  color: #fff;
+}

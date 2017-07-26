@@ -1,0 +1,31 @@
+@import '../scss/mixins.scss';
+
+.recent {
+  padding: 0 1rem;
+}
+
+.recent-sectionHeading {
+  margin: 0;
+  line-height: 1;
+}
+
+.recent-heading {
+  line-height: 1.1;
+  margin: 0 0 5px;
+}
+
+.recent-list {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 -1em;
+}
+
+.recent-article {
+  width: 33%;
+  padding: 1em;
+}
+
+.recent-inner {
+  padding: 5px 1em;
+  @include ios-bg;
+}

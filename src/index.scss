@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran:100,900');
+@import './scss/mixins.scss';
+@import './scss/variables.scss';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 100;
+  overflow-x: hidden;
+}
+
+$gradList: '.hero', '.header', '.header-menu:after', '.header-nav:before', '.header-nav:after', '.item-heading:after', '.item-inner:after', '.projectLink',  '.header-item:focus';
+$gradAnimateList: '.header-menu:hover:after', '.header-item:hover', '.filter-item--active', '.projectLink:hover';
+
+@each $class in $gradList {
+  [data-slug="oss"]         #{$class} { @include bg(#56a0d3);}
+  [data-slug="clientwork"]  #{$class} { @include bg(#d356a0);}
+  [data-slug="talks"]       #{$class} { @include bg(#a0d356);}
+  [data-slug="me"]          #{$class} { @include bg(#d3a056);}
+  [data-slug="blog"]        #{$class} { @include bg(#a056d3);}
+  [data-slug="shiggles"]    #{$class} { @include bg(#56d3a0);}
+}
+
+@each $class in $gradAnimateList {
+  [data-slug="oss"]         #{$class} { @include bg(#56a0d3, true);}
+  [data-slug="clientwork"]  #{$class} { @include bg(#d356a0, true);}
+  [data-slug="talks"]       #{$class} { @include bg(#a0d356, true);}
+  [data-slug="me"]          #{$class} { @include bg(#d3a056, true);}
+  [data-slug="blog"]        #{$class} { @include bg(#a056d3, true);}
+  [data-slug="shiggles"]    #{$class} { @include bg(#56d3a0, true);}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.img-wrap {
+  border: 1px solid #eee;
+  img {
+    display: block;
+  }
+}
+
+.projectLink {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: .25em 1em;
+  margin: 0 0 2em;
+}

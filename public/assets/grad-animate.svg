@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 10 8" style="enable-background:new 0 0 10 8;" xml:space="preserve">
+	 <style type="text/css">
+		 .st0{fill:#e6f040;}
+	 	.st1{fill:#247e28;}
+	 	.st2{fill:#191984;}
+	 	.st3{fill:#7925ba;}
+	 	.st4{fill:#ff00ae;}
+	 </style>
+<g>
+	<polygon class="st0" points="4,8 7,0 9,0 6,8 "/>
+	<polygon class="st1" points="6,8 9,0 11,0 8,8 "/>
+	<polygon class="st2" points="8,8 11,0 13,0 10,8 "/>
+	<polygon class="st3" points="0,8 3,0 5,0 2,8 "/>
+	<polygon class="st4" points="2,8 5,0 7,0 4,8 "/>
+	<polygon class="st0" points="14,8 17,0 19,0 16,8 "/>
+	<polygon class="st3" points="10,8 13,0 15,0 12,8 "/>
+	<polygon class="st4" points="12,8 15,0 17,0 14,8 "/>
+	<polygon class="st0" points="-6,8 -3,0 -1,0 -4,8 "/>
+	<polygon class="st1" points="-4,8 -1,0 1,0 -2,8 "/>
+	<polygon class="st2" points="-2,8 1,0 3,0 0,8 "/>
+	<polygon class="st3" points="-10,8 -7,0 -5,0 -8,8 "/>
+	<polygon class="st4" points="-8,8 -5,0 -3,0 -6,8 "/>
+	<polygon class="st2" points="-9,0 -10,2.7 -10,8 -7,0 "/>
+	<polygon class="st1" points="-9,0 -10,0 -10,2.7 "/>
+	<polygon class="st2" points="18,8 20,8 20,2.7 "/>
+	<polygon class="st1" points="20,0 19,0 16,8 18,8 20,2.7 "/>
+  <animateTransform attributeName="transform" type="translate" from="-2" to="8" dur="8" repeatCount="indefinite"/>
+</g>
+</svg>

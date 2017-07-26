@@ -1,0 +1,83 @@
+$hero-font-base: 4rem;
+$hero-color-main: #fff;
+$hero-color-secondary: #eee;
+$list-count: 5;
+$step-bezier: cubic-bezier(0,.5,.5,1);
+
+$breakpoint: 500px;
+
+.hero {
+  margin: 0 0 3rem;
+}
+
+.hero-inner {
+  padding: 4rem 0 4rem 1rem;
+}
+
+.hero-heading {
+  margin: 0;
+  font-weight: 900;
+  font-size: $hero-font-base;
+  color: $hero-color-main;
+  line-height: 1;
+  position: relative;
+  @media (max-width: $breakpoint){
+    font-size: $hero-font-base / 2.2;
+  }
+}
+
+.hero-excerpt {
+  position: relative;
+  font-size: $hero-font-base / 2;
+  color: $hero-color-secondary;
+  line-height: 1;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hero-label,
+.hero-list {
+  height: 1em;
+  vertical-align: top;
+  display: inline-block;
+  @media (max-width: $breakpoint){
+    font-size: $hero-font-base / 4;
+  }
+}
+
+.hero-list {
+  overflow: hidden;
+  padding: 0;
+  margin: 0 0 0 .3em;
+  list-style: none;
+
+}
+
+.hero-listitem {
+  white-space: nowrap;
+  animation: rotate 6s * $list-count $step-bezier infinite;
+}
+
+@keyframes rotate {
+  $i: 0;
+  $x: $list-count;
+  $offset: 1;
+  @while $i < $x {
+    $percentage: $i * 100% / $x;
+    @if $i > 0 {
+      #{$percentage - 1} {
+        transform: translateY(-1em * ($i - $offset));
+      }
+    }
+    #{$percentage} {
+      transform: translateY(-1em * $i);
+    }
+    $i: $i + 1;
+  }
+  #{100 - $offset + '%'} {
+    transform: translateY(-1em * ($i - $offset));
+  }
+  100% {
+    transform: translateY(-1em * $x);
+  }
+}

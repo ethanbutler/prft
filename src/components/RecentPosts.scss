@@ -21,8 +21,10 @@
 }
 
 .recent-article {
-  width: 33%;
   padding: 1em;
+  @media (min-width: 992px){
+    width: 33%;
+  }
 }
 
 .recent-inner {
